@@ -1,0 +1,9 @@
+import document from "document";
+
+// Force the runtime to display our GUI file (from /resources)
+document.location.replace("index.gui");
+
+console.log("App starting");
+const label = document.getElementById("hello");
+console.log("Found element:", !!label);
+if (label) label.text = "Hello, Sense!";

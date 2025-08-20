@@ -1,0 +1,4 @@
+<svg class="background">
+  <image href="fitbit-wheel.png" />
+  <text id="myLabel" />
+</svg>

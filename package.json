@@ -1,0 +1,31 @@
+{
+  "name": "Dopamine Clock",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "^6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "41d75404-17c7-4b0e-910d-6f373ad050e1",
+    "appType": "clockface",
+    "appDisplayName": "My First App",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+	"main": "app/index.js",
+	"ui": "resources/index.gui",	
+    "requestedPermissions": [],
+    "buildTargets": [
+      "vulcan"
+    ],
+	"companion": { "main": "companion/index.js" },
+    "settings":  { "main": "settings/index.jsx" },
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}
